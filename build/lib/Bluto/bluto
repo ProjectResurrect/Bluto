@@ -7,8 +7,8 @@ Description:
 DNS Recon | Brute Forcer | DNS Zone Transfer | DNS Wild Card Checks | DNS Wild Card Brute Forcer
 Email Enumeration | Staff Enumeration | Compromised Account Enumeration | MetaData Harvesting
 
-maintainer=='ProjectResurrect',
-maintainer_email=='contact@boukhrisssaber.tn'
+Author:  Darryl Lane
+Twitter: @darryllane101
 
 Usage:
     bluto [--domain=<domain>] [-e] [-u] [--timeout=<timeout>] [--api=<key>]

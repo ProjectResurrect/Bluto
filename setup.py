@@ -2,10 +2,10 @@ from setuptools import setup, find_packages
 
 setup(
     name='Bluto',
-    version='2.4.17',
-    author='Darryl lane',
-    author_email='DarrylLane101@gmail.com',
-    url='https://github.com/darryllane/Bluto',
+    version='2.4.18',
+    maintainer=='ProjectResurrect',
+    maintainer_email=='contact@boukhrisssaber.tn',
+    url='https://github.com/ProjectResurrect/Bluto',
     packages=['Bluto'],
     include_package_data=True,
     license='LICENSE.txt',
@@ -25,7 +25,7 @@ setup(
         "pythonwhois",
         "lxml",
         "oletools",
-        "pdfminer==20140328"
+        "pdfminer.six"
     ],
 )
 
