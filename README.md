@@ -4,7 +4,7 @@ This project is a fork of [Bluto](https://github.com/darryllane/Bluto) by Darryl
 -----
 **DNS Recon | Brute Forcer | DNS Zone Transfer | DNS Wild Card Checks | DNS Wild Card Brute Forcer | Email Enumeration | Staff Enumeration | Compromised Account Enumeration | MetaData Harvesting**
  
->Maintainer: ProjectResurrect  |  Maintainer_email=='contact@boukhrisssaber.tn'
+>Maintainer: ProjectResurrect  |  Maintainer_email:'contact@boukhrisssaber.tn'
 
 >https://github.com/ProjectResurrect/Bluto
 
