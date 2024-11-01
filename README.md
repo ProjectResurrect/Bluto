@@ -1,25 +1,23 @@
 **BLUTO**
 -----
+This project is a fork of [Bluto](https://github.com/darryllane/Bluto) by Darryl Lane. The original project appears unmaintained, so this by [ProjectResurrect](https://github.com/ProjectResurrect) fork aims to continue improving and maintaining it.
+-----
 **DNS Recon | Brute Forcer | DNS Zone Transfer | DNS Wild Card Checks | DNS Wild Card Brute Forcer | Email Enumeration | Staff Enumeration | Compromised Account Enumeration | MetaData Harvesting**
  
->Author: Darryl Lane  |  Twitter: @darryllane101
+>Maintainer: ProjectResurrect  |  Maintainer_email=='contact@boukhrisssaber.tn'
 
->https://github.com/darryllane/Bluto
+>https://github.com/ProjectResurrect/Bluto
 
-Like Bluto?
-====
-Give us a vote: https://n0where.net/dns-analysis-tool-bluto/
+## About ProjectResurrect
 
-Bluto has gone through a large code base change and various feature additions have been added since its first day on the job. Now that RandomStorm has been consumed and no longer exists, I felt it time to move the repo to a new location. So from this git push onwards Bluto will live here. I hope you enjoy the new Bluto.
+**ProjectResurrect**  revives and updates powerful, forgotten open-source security tools, helping teams defend against modern threats with proven, trusted resources.
+
+## Versioning
+
+This fork continues from version `v2.4.17` of the original repository. The latest version is `v2.4.18` (details in the changelog).
 
 
-The target domain is queried for MX and NS records. Sub-domains are passively gathered via NetCraft. The target domain NS records are each queried for potential Zone Transfers. If none of them gives up their spinach, Bluto will attempt to identify if SubDomain Wild Cards are being used. If they are not Bluto will brute force subdomains using parallel sub processing on the top 20000 of the 'The Alexa Top 1 Million subdomains' If Wild Cards are in place, Bluto will still Brute Force SubDomains but using a different technique which takes roughly 4 x longer. NetCraft results are then presented individually and are then compared to the brute force results, any duplications are removed and particularly interesting results are highlighted. 
-
-Bluto now does email address enumeration based on the target domain, currently using Bing and Google search engines plus gathering data from the Email Hunter service and LinkedIn. https://haveibeenpwned.com/ is then used to identify if any email addresses have been compromised. Previously Bluto produced a 'Evidence Report' on the screen, this has now been moved off screen and into an HTML report.
-
-Search engine queries are configured in such a way to use a random `User Agent:` on each request and does a country look up to select the fastest Google server in relation to your egress address. Each request closes the connection in an attempt to further avoid captchas, however exsesive lookups will result in captchas (Bluto will warn you if any are identified). 
-         
-Bluto requires various other dependencies. So to make things as easy as possible, `pip` is used for the installation. This does mean you will need to have pip installed prior to attempting the Bluto install.
+## Usage
 
 Bluto now takes command line arguments at launch, the new options are as follows;
 
@@ -63,24 +61,17 @@ Note: To test if pip is already installed execute.
 `sudo pip install bluto --upgrade`
 
 
-**Install From Dev Branch**
-
-(1) To install from the latest development branch (maybe unstable);
-
-`sudo pip uninstall bluto`
-
-`sudo pip install git+git://github.com/darryllane/Bluto@dev`
-
-Change/Feature Requests
-====
-* ~~MetaData Scraping From Document Hunt On Target Domain~~
-* ~~Target Domain Parsed As Argument~~
-* Identification Of Web Portals
-* Active Document Hunting
-
 Changelog
 ====
+* Version __2.4.8__ (__01/11/2024__):
+  * Added Python 3 compatibility
+  * fixed regular expressions
+  * improved README
+
+Legacy Versions
+====
 * Version __2.4.7__ (__20/07/2018__):
+  * Last release by the original author
   * GeoIP lookup refactor
   
 * Version __2.3.10__ (__13/01/2017__):
@@ -106,23 +97,3 @@ Changelog
   * HTML Evidence Report Added.
   * Modulated Code Base.
   * Local Error Logging.
-
-
-**Help Section**
-
-This section contains helpful snippets.
-
-Check version of openssl being used by python
-
-	python
-	import ssl
-	ssl.OPENSSL_VERSION`
-
-Output
-
-	>>> import ssl
-	>>> ssl.OPENSSL_VERSION
-	'OpenSSL 1.0.2j  26 Sep 2016'
-	>>>
-
-Please be aware that the current version of Bluto does not support Python 3. It is a python 2.7.x application.
