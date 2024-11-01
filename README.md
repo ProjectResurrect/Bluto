@@ -1,16 +1,18 @@
 **BLUTO**
 -----
-This project is a fork of [Bluto](https://github.com/darryllane/Bluto) by Darryl Lane. The original project appears unmaintained, so this by [ProjectResurrect](https://github.com/ProjectResurrect) fork aims to continue improving and maintaining it.
+**This project is a fork of [Bluto](https://github.com/darryllane/Bluto) by Darryl Lane. The original project appears unmaintained, so this fork by [ProjectResurrect](https://github.com/ProjectResurrect) aims to continue improving and maintaining it.**
 -----
 **DNS Recon | Brute Forcer | DNS Zone Transfer | DNS Wild Card Checks | DNS Wild Card Brute Forcer | Email Enumeration | Staff Enumeration | Compromised Account Enumeration | MetaData Harvesting**
  
->Maintainer: ProjectResurrect  |  Maintainer_email:'contact@boukhrisssaber.tn'
+>Maintainer: ProjectResurrect  |  Email:'contact@boukhrisssaber.tn'
 
 >https://github.com/ProjectResurrect/Bluto
+
 
 ## About ProjectResurrect
 
 **ProjectResurrect**  revives and updates powerful, forgotten open-source security tools, helping teams defend against modern threats with proven, trusted resources.
+
 
 ## Versioning
 
@@ -33,30 +35,31 @@ Bluto now takes command line arguments at launch, the new options are as follows
 	bluto -api 2b0ab19df982a783877a6b59b982fdba4b6c3669 -e
 	bluto -d example.com -api 2b0ab19df982a783877a6b59b982fdba4b6c3669 -e
 
+## Installation Instructions
 
-**Pip Install Instructions**
+**Install Pip (if not already installed):**
 
 Note: To test if pip is already installed execute.
 
 `pip -V`
 
-(1) Mac and Kali users can simply use the following command to download and install `pip`.
+On Mac or Kali, run the following command to download and install `pip`.
 
 `curl https://bootstrap.pypa.io/get-pip.py -o - | python`
 
-**Bluto Install Instructions**
+**Install Bluto**
 
-(1) Once `pip` has successfully downloaded and installed, we can install Bluto:
+Once `pip` is installed, run the following command to install Bluto:
 
 `sudo pip install bluto`
 
-(2) You should now be able to execute 'bluto' from any working directory in any terminal.
+You should now be able to execute `bluto` from any working directory.
  
 `bluto`
 
-**Upgrade Instructions**
+## Upgrade Instructions
 
-(1) The upgrade process is as simple as;
+To upgrade Bluto to the latest version, simply run:
 
 `sudo pip install bluto --upgrade`
 
