@@ -6,6 +6,7 @@ Bluto/bluto
 Bluto.egg-info/PKG-INFO
 Bluto.egg-info/SOURCES.txt
 Bluto.egg-info/dependency_links.txt
+Bluto.egg-info/entry_points.txt
 Bluto.egg-info/requires.txt
 Bluto.egg-info/top_level.txt
 Bluto/doc/countries.txt
