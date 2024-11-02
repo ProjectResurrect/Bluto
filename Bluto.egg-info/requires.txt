@@ -1,9 +1,8 @@
-docopt
 dnspython
 termcolor
-beautifulsoup4
+BeautifulSoup4
 requests[security]
 pythonwhois
 lxml
 oletools
-pdfminer.six
+pdfminer
