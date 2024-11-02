@@ -2,3 +2,6 @@
 .venv
 .pypirc
 *.egg-info
+\distbuild/
+dist/
+log/
