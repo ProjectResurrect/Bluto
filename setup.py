@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='Bluto',
+    name='BlutoRS',
     version='2.4.18',
     author='Darryl Lane',
     maintainer='ProjectResurrect',
